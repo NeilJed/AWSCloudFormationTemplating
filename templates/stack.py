@@ -3,7 +3,9 @@ ViaPlayTestTemplate - Python based template class for creating the coding test c
 
 Required config_data variables:
 
+- description (str): Description of the configuration.
 - environment (str): Name of the environment this config is targetted for.
+- stackname (str): Stack name to be put into the metadata section.
 """
 
 from troposphere import Template, Tags, Parameter, Ref, Output
