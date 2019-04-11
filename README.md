@@ -9,7 +9,8 @@ The concept is to support "configuration as code" in that templates can be defin
 # Exercise features
 
 - Uses JSON Jinja2 (.j2) or Python (.py) templates that use Troposphere.
-- Currently uses a single custom parameter (Environment name) for each template but can easily support more.
+- Reads template parameters from a JSON file.
+- Super basic validation against an pre-existing template.
 - Outputs CloudFormation config as JSON.
 
 # Requirements
