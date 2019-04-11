@@ -39,12 +39,12 @@ class ViaPlayTestTemplate(object):
         self.deps = []
         self.mdata = {
             'DependsOn': self.deps,
-            'Environment':self.env,
-            'StackName': '%s-%s' % (self.env, 'VPC')
+            'Environment': config_data['environment'],
+            'StackName': config_data['stackname']
         }
 
         # Action steps to build the template.
-        self.add_description('Service VPC')
+        self.add_description(config_data['description'])
         self.add_metadata(self.mdata)
 
         self.vpc_ref = self.add_vpc('VPC', self.env, 'ServiceVPC')

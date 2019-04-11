@@ -1,0 +1,5 @@
+{
+  "description": "Service VPC",
+  "stackname": "Production-VPC",
+  "environment": "Production"
+}

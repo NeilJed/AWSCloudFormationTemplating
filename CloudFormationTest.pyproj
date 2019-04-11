@@ -12,7 +12,7 @@
     <Name>ViaPlay Tech Test</Name>
     <RootNamespace>ViaPlay Tech Test</RootNamespace>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
-    <CommandLineArguments>templates\stack.py output.json Random</CommandLineArguments>
+    <CommandLineArguments>templates\stack.py output.json params.json --c json\template_experimental.json</CommandLineArguments>
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -30,7 +30,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="json\template_development.json" />
+    <Content Include="json\template_experimental.json" />
+    <Content Include="json\template_production.json" />
     <Content Include="output.json" />
+    <Content Include="params.json" />
     <Content Include="templates\stack.j2" />
     <Content Include="ReadMe.md" />
   </ItemGroup>
